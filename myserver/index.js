@@ -175,7 +175,7 @@ app.use(
     type: "application/x-www-form-urlencoded",
   })
 );
-app.use(cors({ origin: "http://localhost:5173/" }));
+app.use(cors({ origin: "*" }));
 
 // Serve uploads folder
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
