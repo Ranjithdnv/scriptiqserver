@@ -175,7 +175,7 @@ app.use(
     type: "application/x-www-form-urlencoded",
   })
 );
-app.use(cors({ origin: "https://scriptiqserver.onrender.com" }));
+app.use(cors({ origin: "http://localhost:5173/" }));
 
 // Serve uploads folder
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
